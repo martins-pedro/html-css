@@ -6,3 +6,50 @@
     padding: 0;
 }
 
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    font-family: 'Passion One', 'Cursive';
+}
+
+header > h1 {
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 4vw;
+}
+
+.img {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.img > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.712);
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
