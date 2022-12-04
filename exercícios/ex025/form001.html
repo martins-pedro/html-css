@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(27, 27, 211), rgb(4, 8, 68));
+        }
+
+        main {
+            position: relative;
+            height: 97vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            height: 350px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px black;
+            text-align: center;
+        }
+
+        input {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .submit {
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            background-image: linear-gradient(to right, rgb(27, 27, 211), rgb(4, 8, 68));
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-sizing: border-box;
+            
+        }
+
+        .submit:hover {
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" method="post">
+            <h1>Meu primeiro formulário</h1>
+            <div>
+                <label for="usu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15"> 
+            </div>
+            <div>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="15">
+            </div>
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+    </main>
+</body>
+</html>
