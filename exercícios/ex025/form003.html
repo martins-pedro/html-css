@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Exemplo Formulário</legend>
+            <div>
+                <label for="est">Estado</label>
+                <select name="est" id="est">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sul">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+            
+                    <optgroup label="Região Norte">
+                        <option value="BA">Bahia</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="prof">Profissão:</label>
+                <input type="text" name="prof" id="prof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="Mec">Mecânico</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="MED">Médico</option>
+                    <option value="COZ">Cozinheiro</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="txtarea">Escreva:</label><br>
+                <textarea name="txtarea" id="txtarea" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
