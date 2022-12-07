@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <menu>
-            <h1>Menu Responsivo</h1>
+        <h1>Menu Responsivo</h1>
+        <span id="iconMenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menuList">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -35,5 +37,15 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi suscipit maiores tenetur reprehenderit architecto cum nostrum quos neque fugit veniam, laboriosam atque nemo exercitationem? Debitis incidunt natus dolor error?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi suscipit maiores tenetur reprehenderit architecto cum nostrum quos neque fugit veniam, laboriosam atque nemo exercitationem? Debitis incidunt natus dolor error?</p>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menuList.style.display == 'block') {
+                menuList.style.display = 'none'
+            } else {
+                menuList.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

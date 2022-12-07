@@ -6,17 +6,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-menu {
+header {
     background-image: linear-gradient(to bottom, blue, rgb(0, 0, 117));
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.671);
     box-shadow: 2px 2px 10px black;
 }
 
-menu > h1 {
+header > h1 {
     text-align: center;
     padding: 30px;
     font-weight: bolder;
+}
+
+#iconMenu {
+    display: none;
 }
 
 li {
@@ -57,4 +61,29 @@ h2 {
 
 p {
     text-indent: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    menu {
+        display: none;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+        border-top: 2px solid white;
+        border-radius: 0;
+    }
+
+    #iconMenu {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: rgb(0, 0, 117);
+    }
+
+    #iconMenu:hover {
+        background-color: blue;
+        cursor: pointer;
+    }
 }
